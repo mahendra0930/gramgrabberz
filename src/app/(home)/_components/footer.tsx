@@ -1,4 +1,5 @@
 import React from "react";
+import AdBanner from "@/components/AdBanner";
 
 import { useTranslations } from "next-intl";
 
@@ -6,7 +7,7 @@ export function Footer() {
   const t = useTranslations("layouts.home.footer");
 
   const year = new Date().getFullYear();
-
+<AdBanner />
   return (
     <footer className="w-full border-t bg-gray-100 py-6 md:py-0 dark:bg-gray-900">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:h-16 md:flex-row md:px-6">

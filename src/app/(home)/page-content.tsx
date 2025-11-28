@@ -2,24 +2,26 @@ import { Hero } from "./_components/hero";
 import { Features } from "./_components/features";
 import { HowItWorks } from "./_components/how-it-works";
 import { Testimonials } from "./_components/testimonials";
+import AdBanner from "@/components/AdBanner";
+
 import { FrequentlyAsked } from "./_components/frequently-asked";
 
 export default function HomePage() {
   return (
     <div>
-      {/* Hero Section */}
+      {<AdBanner />/* Hero Section */}
       <Hero />
 
-      {/* Features Section */}
+      {<AdBanner />/* Features Section */}
       <Features />
 
-      {/* How It Works Section */}
+      {<AdBanner />/* How It Works Section */}
       <HowItWorks />
 
-      {/* Testimonials Section */}
+      {<AdBanner />/* Testimonials Section */}
       <Testimonials />
 
-      {/* FAQ Section */}
+      {<AdBanner />/* FAQ Section */}
       <FrequentlyAsked />
     </div>
   );

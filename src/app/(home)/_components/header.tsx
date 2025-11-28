@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import AdBanner from "@/components/AdBanner";
 
 import { useTranslations } from "next-intl";
 import { useIsMobile } from "@/hooks/use-is-mobile";
@@ -76,6 +77,7 @@ export function Header() {
             <ThemeToggleButton />
           </div>
         </nav>
+        <AdBanner />
 
         {/* Mobile Navigation */}
         <div className="ml-auto flex items-center md:hidden">
